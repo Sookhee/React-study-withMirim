@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, Fragment} from 'react';
 
 const IterationSample = () => {
     const [names, setNames] = useState([
@@ -24,9 +24,9 @@ const IterationSample = () => {
     const nameList = names.map(name => <li key={name.id}>{name.text}</li>);
     return (
         <>
-        <input value={inputText} onChange={onChange}/>
-        <button onClick={onClick}>추가</button>
-        <ul>{nameList}</ul>
+            <input value={inputText} onChange={onChange}/>
+            <button onClick={onClick}>추가</button>
+            <ul>{nameList}</ul>
         </>
     );
 };
