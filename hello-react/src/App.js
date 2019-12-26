@@ -1,12 +1,20 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import Info from './Info';
 
-function getRandomColor(){
-  return '#' + Math.floor(Math.random() * 16777215).toString(16);
-}
-
 const App = () => {
-  return <Info/>;
-}
+  const [visible, setVisible] = useState(false);
+  return(
+    <div>
+      <button onClick={() => {
+        setVisible(!visible);
+      }}
+      >
+        {visible ? '숨기기' : '보이기'}
+      </button>
+      <hr/>
+      {visible && <Info/>}
+    </div>
+  );
+};
 
 export default App;
