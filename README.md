@@ -17,3 +17,5 @@ yarn create react-app <프로젝트 이름>
 cd <프로젝트 이름>
 yarn start
 ```
+
+### 2강
