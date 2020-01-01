@@ -19,3 +19,9 @@ yarn start
 ```
 
 ### 2강
+
+### 9강
+* Sass 라이브러리 설치
+```{.bash}
+yarn add node-sass
+```
