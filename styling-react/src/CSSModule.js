@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './CSSModule.module.css';
+import styles from './CSSModule.module.scss';
 const CSSModule = () => {
     return (
         // 클래스 두개 이상 적용 시킬 때
