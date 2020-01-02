@@ -1,10 +1,11 @@
-<<<<<<< HEAD
-=======
 @import './styles/utils.scss';
 
->>>>>>> 99a12b4174306aede9c9aae837bd2e709817094d
 .SassComponent{
     display: flex;
+    background: $oc-gray-2;
+    @include media('<768px'){
+        background: $oc-gray-9;
+    }
     .box{ //일반 CSS에서는 .SassComponent .box와 마찬가지
         background: red;
         cursor: pointer;
