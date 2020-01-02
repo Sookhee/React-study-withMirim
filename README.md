@@ -40,3 +40,10 @@ yarn add classnames
 ```{.bash}
 yarn add styled-components
 ```
+
+**에러**<br>
+1. https://github.com/Sookhee/React-study-withMirim/issues/1#issue-544614777
+  <br>-> 해결 :
+  ```bash
+  yarn add --dev babel-jest @babel/core @babel/preset-env
+  ```
