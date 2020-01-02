@@ -30,3 +30,13 @@ yarn add node-sass
 ```{.bash}
 yarn add open-color include-media
 ```
+
+* Sass 라이브러리 (classnames: CSS 클래스를 조건부로 설정할 때 유용)
+```{.bash}
+yarn add classnames
+```
+
+* styled-components 라이브러리 설치(CSS-in-JS)
+```{.bash}
+yarn add styled-components
+```
