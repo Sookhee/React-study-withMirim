@@ -2,7 +2,7 @@ import React from 'react';
 import styled, {css} from 'styled-components';
 
 const Box = styled.div`
-    backgroundL ${props => props.color || 'blue'};
+    background: ${props => props.color || 'blue'};
     padding: 1rem;
     display: flex;
 `;
