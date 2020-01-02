@@ -26,7 +26,7 @@ yarn start
 yarn add node-sass
 ```
 
-* Sass 라이브러리 
+* Sass 라이브러리 (open-color: 색상 팔레트/ include-media: 반응형 디자인 쉽게)
 ```{.bash}
-yarn add open-color import-media
+yarn add open-color include-media
 ```
