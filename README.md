@@ -35,3 +35,8 @@ yarn add open-color include-media
 ```{.bash}
 yarn add classnames
 ```
+
+* styled-components 라이브러리 설치(CSS-in-JS)
+```{.bash}
+yarn add styled-components
+```
