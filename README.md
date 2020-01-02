@@ -25,3 +25,8 @@ yarn start
 ```{.bash}
 yarn add node-sass
 ```
+
+* Sass 라이브러리 
+```{.bash}
+yarn add open-color import-media
+```
