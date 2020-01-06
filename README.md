@@ -47,3 +47,9 @@ yarn add styled-components
   ```bash
   yarn add --dev babel-jest @babel/core @babel/preset-env
   ```
+  
+### 10강
+* Sass 라이브러리 설치 (classnames, react-icons)
+```{.bash}
+yarn add node-sass classnames, react-icons
+```
