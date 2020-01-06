@@ -53,3 +53,8 @@ yarn add styled-components
 ```{.bash}
 yarn add node-sass classnames, react-icons
 ```
+
+**에러**<br/>
+1. https://github.com/Sookhee/React-study-withMirim/issues/2
+<br>-> 해결 : 
+useCallBack =(오타수정)=> useCallback
