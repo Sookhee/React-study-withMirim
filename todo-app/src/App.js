@@ -1,4 +1,4 @@
-import React, { useState, useRef, useCallback } from 'react';
+import React, { useState, useRef, useCallBack } from 'react';
 import TodoTemplete from './components/TodoTemplete';
 import TodoInsert from './components/TodoInsert';
 import TodoList from './components/TodoList';
@@ -24,7 +24,7 @@ const App = () => {
 
   const nextId = useRef(4);
 
-  const onInsert = useCallback(
+  const onInsert = useCallBack(
     text => {
       const todo = {
         id: nextId.current,
