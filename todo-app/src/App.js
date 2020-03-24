@@ -2,6 +2,7 @@ import React, { useState, useRef, useCallback } from 'react';
 import TodoTemplete from './components/TodoTemplete';
 import TodoInsert from './components/TodoInsert';
 import TodoList from './components/TodoList';
+import { removeDotSegments } from '../node_modules/uri-js/dist/es5/uri.all';
 
 const App = () => {
   const [todos, setTodos] = useState([
@@ -44,10 +45,21 @@ const App = () => {
     [todos],
   );
 
+  const onToggle = useCallback(
+    id => {
+      setTodos(
+        todos.map(todo =>
+          todo.id === id ? {...todo, checked: !todo.checked}: todo,
+        ),
+      );
+    },
+    [todos],
+  );
+
   return (
     <TodoTemplete>
       <TodoInsert onInsert={onInsert}/>
-      <TodoList todos={todos} onRemove={onRemove}/>
+      <TodoList todos={todos} onRemove={onRemove} onToggle={onToggle}/>
     </TodoTemplete>
   )
 }
