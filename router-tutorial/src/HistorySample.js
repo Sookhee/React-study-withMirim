@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 
 class HistorySample extends Component{
+    //뒤로가기
     handleGoBack = () => {
         this.props.history.goBack();
     };
 
+    //홈으로 이동
     handleGoHome = () => {
         this.props.history.push('/');
     };
