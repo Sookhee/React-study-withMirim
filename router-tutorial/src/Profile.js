@@ -1,6 +1,7 @@
 import React from 'react';
 import {withRouter} from 'react-router-dom';
 import WithRouterSample from './WithRouterSample';
+import Profiles from './Profiles';
 
 const data={
     veloper:{
@@ -30,4 +31,4 @@ const Profile = ({match}) => {
     );
 };
 
-export default Profile;
+export default withRouter(Profile);
