@@ -19,7 +19,7 @@ const Profiles = () => {
                 </li>
                 <li>
                     <NavLink activeStyle={{background:'black', color:'white'}} to="/profiles/gildong" >
-                        gildong
+                        gildong 
                     </NavLink>
                 </li>
             </ul>
