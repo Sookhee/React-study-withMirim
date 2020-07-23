@@ -10,3 +10,30 @@ const DECREASE = 'DECREASE';
 const toggleSwitch = () => ({type: TOGGLE_SWITCH});
 const increase = () => ({type: INCREASE, difference});
 const decrease = () => ({type: DECREASE});
+
+const initialState = {
+    toggle: false,
+    counter: 0
+};
+
+function reducer(state = initialState, action){
+    switch(action.type){
+        case TOGGLE_SWITCH:
+            return{
+                ...state,
+                toggle: !state.toggle
+            };
+        case INCREASE:
+            return{
+                ...state,
+                counter: state.counter - 1
+            };
+        case DECREASE:
+            return{
+                ...state,
+                counter: state.counter + 1
+            };
+        default:
+            return state;
+    }
+}
