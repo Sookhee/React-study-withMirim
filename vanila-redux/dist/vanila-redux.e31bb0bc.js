@@ -168,12 +168,12 @@ function reducer() {
 
     case INCREASE:
       return _objectSpread(_objectSpread({}, state), {}, {
-        counter: state.counter - 1
+        counter: state.counter + action.difference
       });
 
     case DECREASE:
       return _objectSpread(_objectSpread({}, state), {}, {
-        counter: state.counter + 1
+        counter: state.counter - 1
       });
 
     default:

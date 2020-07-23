@@ -26,12 +26,12 @@ function reducer(state = initialState, action){
         case INCREASE:
             return{
                 ...state,
-                counter: state.counter - 1
+                counter: state.counter + action.difference
             };
         case DECREASE:
             return{
                 ...state,
-                counter: state.counter + 1
+                counter: state.counter - 1
             };
         default:
             return state;
