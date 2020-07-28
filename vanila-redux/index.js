@@ -3,14 +3,14 @@ import {createStore} from 'redux';
 const divToggle = document.querySelector('.toggle');
 const counter = document.querySelector('h1');
 const btnIncrease = document.querySelector('#increase');
-const btnecrease = document.querySelector('#decrease');
+const btnDecrease = document.querySelector('#decrease');
 
 const TOGGLE_SWITCH = 'TOGGLE_SWITCH';
 const INCREASE = 'INCREASE';
 const DECREASE = 'DECREASE';
 
 const toggleSwitch = () => ({type: TOGGLE_SWITCH});
-const increase = () => ({type: INCREASE, difference});
+const increase = difference => ({type: INCREASE, difference});
 const decrease = () => ({type: DECREASE});
 
 const initialState = {
@@ -55,3 +55,13 @@ const render = () => {
 
 render();
 store.subscribe(render);
+
+divToggle.onclick = () => {
+    store.dispatch(toggleSwitch());
+};
+btnIncrease.onclick = () => {
+    store.dispatch(increase(1));
+};
+btnDecrease.onclick = () => {
+    store.dispatch(decrease());
+}
