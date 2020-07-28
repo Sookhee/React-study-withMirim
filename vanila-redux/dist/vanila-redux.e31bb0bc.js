@@ -938,6 +938,7 @@ var render = function render() {
 };
 
 render();
+store.subscribe(render);
 },{"redux":"node_modules/redux/es/redux.js"}],"C:/Users/minji/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
