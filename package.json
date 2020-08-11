@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "react-virtualized": "^9.21.2",
-    "styled-components": "^5.0.1"
-  }
-}
